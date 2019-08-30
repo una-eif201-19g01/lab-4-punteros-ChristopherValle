@@ -61,8 +61,8 @@ std::string Empleado::reporteEmpleado(){
     else if (*revisionPTR = false){
         rev = "No";
     }
-    std::string reporte = "Empleado # [" + *identificacionPTR + "]\n\tNombre [" + *nombreEmpleadoPTR + "]\n\tAños de experiencia [" +
-            *anosExperienciaPTR + "]\n\tSalario Inicial [" + *salarioBasePTR + "]\n\tSalario Acumulado [" + *salarioPTR + 
+    std::string reporte = "Empleado # [" + std::to_string(*identificacionPTR) + "]\n\tNombre [" + std::to_string(*nombreEmpleadoPTR) + "]\n\tAños de experiencia [" +
+            std::to_string(*anosExperienciaPTR) + "]\n\tSalario Inicial [" + std::to_string(*salarioBasePTR) + "]\n\tSalario Acumulado [" + std::to_string(*salarioPTR) + 
             "]\n\tNecesita revision [" + rev + "]\n";
     return reporte;
 }
